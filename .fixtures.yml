@@ -1,0 +1,8 @@
+fixtures:
+  repositories:
+    concat: "git://github.com/puppetlabs/puppetlabs-concat.git"
+    file_concat: "git://github.com/electrical/puppet-lib-file_concat.git"
+    logrotate: 'git://github.com/rodjek/puppet-logrotate.git'
+    stdlib: 'git://github.com/puppetlabs/puppetlabs-stdlib.git'
+  symlinks:
+    carbon_c_relay: "#{source_dir}"

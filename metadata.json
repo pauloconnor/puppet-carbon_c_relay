@@ -1,0 +1,15 @@
+{
+  "name": "pauloconnor-carbon_c_relay",
+  "version": "0.1.0",
+  "author": "pauloconnor",
+  "summary": "Install and configure Carbon C Relay",
+  "license": "Apache 2.0",
+  "source": "github.com/pauloconnor/puppet-carbon_c_relay",
+  "project_page": "https://github.com/pauloconnor/puppet-carbon_c_relay",
+  "issues_url": "https://github.com/pauloconnor/puppet-carbon_c_relay/issues",
+  "dependencies": [
+    {"name":"puppetlabs-concat","version_requirement":">=1.2.1"}
+    {"name":"puppetlabs-stdlib","version_requirement":">= 2.2.1"}
+    {"name":"rodjek-logrotate","version_requirement":">= 1.0.2"}
+  ]
+}

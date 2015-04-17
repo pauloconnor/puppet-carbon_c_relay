@@ -1,0 +1,6 @@
+.*.sw?
+pkg
+!spec/fixtures/carbon_c_relay
+spec/fixtures
+.rspec_system
+.vagrant
