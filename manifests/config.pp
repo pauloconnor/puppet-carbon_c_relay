@@ -11,6 +11,7 @@ class carbon_c_relay::config () {
     ensure      => 'present',
     owner       => 'root',
     group       => 'root',
+    mode        => '0755',
     content     => template('carbon_c_relay/relay.init.erb')
   }
 
