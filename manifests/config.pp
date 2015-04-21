@@ -19,7 +19,7 @@ class carbon_c_relay::config () {
     owner       => 'root',
     group       => 'root',
     mode        => '0644',
-    notify      => Service['carbon-c-relay']
+    notify      => Service['relay']
   }
 
   concat::fragment { '01-relay-header':

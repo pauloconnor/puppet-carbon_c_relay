@@ -67,7 +67,7 @@ class carbon_c_relay (
   }
 
   class { 'carbon_c_relay::install':}->
-  class { 'carbon_c_relay::service':}->
   class { 'carbon_c_relay::config':}->
+  class { 'carbon_c_relay::service':}->
   class { 'carbon_c_relay::maintenance':}
 }
