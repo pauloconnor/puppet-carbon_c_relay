@@ -4,7 +4,7 @@
 #    ;
 #
 define carbon_c_relay::match(
-    $name                      = '*',
+    $rule                      = '*',
     $send_to                   = 'blackhole',
     $stop                      = false,
   ) {

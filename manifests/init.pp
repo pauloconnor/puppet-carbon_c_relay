@@ -29,11 +29,11 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Paul O'Connor <author@domain.com>
 #
 # === Copyright
 #
-# Copyright 2015 Your name here, unless otherwise noted.
+# Copyright 2015 Paul O'Connor, unless otherwise noted.
 #
 class carbon_c_relay (
   $interface          = 'all',
