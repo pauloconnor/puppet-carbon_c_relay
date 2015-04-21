@@ -21,12 +21,9 @@
 # pidfile: /var/run/carbon/relay.pid
 
 # Source function library.
-. /etc/init.d/functions
-
 RETVAL=0
 PROG="relay"
 DAEMON_CONFIG=/etc/${PROG}.conf
-DAEMON_SYSCONFIG=/etc/sysconfig/${PROG}
 DAEMON=/usr/bin/${PROG}
 ARGS="-r <%= @config_file %> -i <%= @interface %> \
       -p <%= @port %> -w <%= @workers %> \
@@ -37,8 +34,6 @@ LOCK_FILE=/var/lock/subsys/${PROG}
 LOG_FILE=<%= @log_file %>
 DAEMON_USER="www-data"
 FQDN=$(hostname --long)
-
-. ${DAEMON_SYSCONFIG}
 
 start() {
   if check_status > /dev/null; then
@@ -85,7 +80,7 @@ case "$1" in
     status)
 	      check_status
         ;;
-    reload|)
+    reload)
         reload
         ;;
     restart)
