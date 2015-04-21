@@ -1,4 +1,4 @@
-cluster <%= @name %>
+cluster <%= @cluster_name %>
     <%= @forward_proto %> <%- if @replication_factor >1 %>replication <%= @replication_factor %>
         <%- @hosts.each do | host | %>
         <%= host %>

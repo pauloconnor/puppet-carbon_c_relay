@@ -4,12 +4,13 @@
 #    ;
 #
 define carbon_c_relay::cluster(
-    $name                       = $title,
+    $cluster_name               = $title,
     $forward_proto              = 'forward',
     $replication_factor         = 1,
     $hosts                      = [],
   ) {
 
+  validate_string($cluster_name)
   validate_array($hosts)
   validate_re($forward_proto, '^(forward|any_of|failover|carbon_ch|fnv1a_ch)$')
   if !is_numeric($replication_factor){
