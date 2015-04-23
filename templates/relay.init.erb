@@ -116,12 +116,15 @@ case "$1" in
     fi
     exit $code
     ;;
+  reload)
+    reload
+    ;;
   restart)
 
     stop && start
     ;;
   *)
-    echo "Usage: $SCRIPTNAME {start|stop|force-stop|status|restart}" >&2
+    echo "Usage: $SCRIPTNAME {start|stop|force-stop|status|restart|reload}" >&2
     exit 3
   ;;
 esac
