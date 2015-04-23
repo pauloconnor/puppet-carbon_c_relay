@@ -17,9 +17,9 @@ define carbon_c_relay::cluster(
     fail('$replication_factor must be an integer')
   }
 
-  concat::fragment { "config/cluster-${title}":
+  concat::fragment { "a_config/cluster-${title}":
     target  => $carbon_c_relay::config_file,
     content => template('carbon_c_relay/config/cluster.erb'),
-    order   => 'a',
+    order   => '05',
   }
 }

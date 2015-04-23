@@ -28,9 +28,9 @@ define carbon_c_relay::aggregate(
   validate_string($compute)
   validate_string($metric) # This is a regex though
 
-  concat::fragment { "config/rewrite-${title}":
+  concat::fragment { "d_config/rewrite-${title}":
     target  => $carbon_c_relay::config_file,
     content => template('carbon_c_relay/config/aggregate.erb'),
-    order   => 'd',
+    order   => '40',
   }
 }

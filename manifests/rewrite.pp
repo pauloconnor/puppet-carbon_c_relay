@@ -10,7 +10,7 @@ define carbon_c_relay::rewrite(
   validate_string($expression)
   validate_string($replacement)
 
-  concat::fragment { "config/rewrite-${title}":
+  concat::fragment { "b_config/rewrite-${title}":
     target  => $carbon_c_relay::config_file,
     content => template('carbon_c_relay/config/rewrite.erb'),
     order   => '30',

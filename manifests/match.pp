@@ -14,7 +14,7 @@ define carbon_c_relay::match(
     fail('$stop must be an boolean')
   }
 
-  concat::fragment { "config/match-${title}":
+  concat::fragment { "c_config/match-${title}":
     target  => $carbon_c_relay::config_file,
     content => template('carbon_c_relay/config/match.erb'),
     order   => '20',
