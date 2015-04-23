@@ -36,8 +36,7 @@
 # Copyright 2015 Paul O'Connor, unless otherwise noted.
 #
 class carbon_c_relay (
-  $interface          = 'all',
-  $port               = 2003,
+  $port               = 3003,
   $config_file        = '/etc/relay.conf',
   $log_file           = '/var/log/relay.log',
   $workers            = 12,
@@ -47,7 +46,6 @@ class carbon_c_relay (
   $version            = 'latest',
   ){
 
-  validate_string($interface)
   if !is_numeric($port) {
     fail('$port must be an integer')
   }

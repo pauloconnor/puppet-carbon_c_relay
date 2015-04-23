@@ -17,6 +17,6 @@ define carbon_c_relay::match(
   concat::fragment { "config/match-${title}":
     target  => $carbon_c_relay::config_file,
     content => template('carbon_c_relay/config/match.erb'),
-    order   => '10',
+    order   => '20',
   }
 }

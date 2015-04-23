@@ -31,6 +31,6 @@ define carbon_c_relay::aggregate(
   concat::fragment { "config/rewrite-${title}":
     target  => $carbon_c_relay::config_file,
     content => template('carbon_c_relay/config/aggregate.erb'),
-    order   => '20',
+    order   => '40',
   }
 }
