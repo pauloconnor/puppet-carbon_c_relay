@@ -25,7 +25,7 @@ class carbon_c_relay::config () {
 
   concat::fragment { '01-relay-header':
     target      => $carbon_c_relay::config_file,
-    order       => '01',
+    order       => 'alpha',
     content     => "# This file managed by Puppet\n",
   }
 
