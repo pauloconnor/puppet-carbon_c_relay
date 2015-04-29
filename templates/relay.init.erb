@@ -78,10 +78,14 @@ status() {
 }
 
 reload() {
-  echo -n $"Reload Carbon C Relay: "
-  kill -HUP -p `cat "$pidfile"`
-  RETVAL=$?
-  echo
+  echo -n "Reload Carbon C Relay: "
+  kill -HUP `cat "$pidfile"`
+  code=$?
+  if [ code -eq 0 ] ; then
+    echo "OK"
+  else
+    echo "Failed"
+  fi
 }
 
 force_stop() {

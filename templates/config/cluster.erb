@@ -1,6 +1,6 @@
 cluster <%= @cluster_name %>
-    <%= @forward_proto %> <% if @replication_factor.to_i > 1 -%>replication <%= @replication_factor %><% end -%>
-        <% @hosts.each do | host | -%>
-        <%= host %>
-        <% end -%>
-    ;
+  <%= @forward_proto %> <% if @replication_factor.to_i > 1 -%>replication <%= @replication_factor %><% end -%>
+    <% @hosts.each do | host | -%>
+    <%= host %>
+    <% end -%>
+  ;
