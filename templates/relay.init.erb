@@ -81,7 +81,7 @@ reload() {
   echo -n "Reload Carbon C Relay: "
   kill -HUP `cat "$pidfile"`
   code=$?
-  if [ code -eq 0 ] ; then
+  if [ $code -eq 0 ] ; then
     echo "OK"
   else
     echo "Failed"
