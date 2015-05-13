@@ -19,7 +19,7 @@ export PATH
 
 name=relay
 program=/usr/bin/relay
-args="-f <%= @config_file %> -p <%= @port %> <% if @workers != '' %>-w <%= @workers %> <% end -%>-b <%= @batch_size %> -q <%= @queue_size %> -S <%= @statistics %>"
+args="-f <%= @config_file %> -p <%= @port %> <% if @workers != 0 %>-w <%= @workers %> <% end -%>-b <%= @batch_size %> -q <%= @queue_size %> -S <%= @statistics %>"
 pidfile="/var/run/$name.pid"
 
 [ -r /etc/default/$name ] && . /etc/default/$name
