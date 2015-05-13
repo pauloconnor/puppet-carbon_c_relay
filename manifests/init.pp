@@ -39,7 +39,7 @@ class carbon_c_relay (
   $port               = 3003,
   $config_file        = '/etc/relay.conf',
   $log_file           = '/var/log/relay.log',
-  $workers            = 12,
+  $workers,
   $batch_size         = 2500,
   $queue_size         = 25000,
   $statistics         = 60,
