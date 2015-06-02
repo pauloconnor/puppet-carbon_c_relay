@@ -8,8 +8,8 @@
   "project_page": "https://github.com/pauloconnor/puppet-carbon_c_relay",
   "issues_url": "https://github.com/pauloconnor/puppet-carbon_c_relay/issues",
   "dependencies": [
-    {"name":"puppetlabs-concat","version_requirement":">=1.2.1"}
-    {"name":"puppetlabs-stdlib","version_requirement":">= 2.2.1"}
+    {"name":"puppetlabs-concat","version_requirement":">=1.2.1"},
+    {"name":"puppetlabs-stdlib","version_requirement":">= 2.2.1"},
     {"name":"rodjek-logrotate","version_requirement":">= 1.0.2"}
   ]
 }
