@@ -6,7 +6,7 @@ class carbon_c_relay::service {
     hasstatus  => true,
     hasrestart => true,
     restart    => '/etc/init.d/relay reload',
-    require    => [ File[$carbon_c_relay::config_file],
+    require    => [ Concat[$carbon_c_relay::config_file],
                     File['/etc/init.d/relay'] ],
   }
 }
