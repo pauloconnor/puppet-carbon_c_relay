@@ -25,7 +25,7 @@ GEM
       rake
       rspec
       rspec-puppet
-    rake (10.4.2)
+    rake (13.0.1)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
       rspec-expectations (~> 3.1.0)
